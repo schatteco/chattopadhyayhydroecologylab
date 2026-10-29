@@ -1,71 +1,109 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Somsubhra Chattopadhyay - Personal Website</title>
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 2rem; }
-    h1, h2 { color: #2c3e50; }
-    h1 { font-size: 2.2rem; }
-    h2 { margin-top: 2rem; font-size: 1.6rem; }
-    ul { padding-left: 1.2rem; }
-    li { margin-bottom: 0.5rem; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .profile-img {  width: 260px; height: auto; border-radius: 130px; margin-bottom: 1rem; display: block; margin-left: auto; margin-right: auto; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chattopadhyay Hydroecology Lab</title>
+<meta name="description" content="Hydroecology lab at Texas State University studying flow regimes, intermittent rivers, eDNA and freshwater biodiversity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <img src="IMG_5583.jpg" alt="Dr. Somsubhra Chattopadhyay" class="profile-img">
-  <h1>Dr. Somsubhra Chattopadhyay</h1>
-  <p><strong>Email:</strong> schattop@uwsp.edu<br>
-     <strong>Phone:</strong> +1 715-496-9747<br>
-     <strong>Affiliation:</strong> College of Natural Resources, University of Wisconsin – Stevens Point</p>
-  <p>
-    <strong>Links:</strong><br>
-    <a href="https://scholar.google.com/citations?user=seiX7_MAAAAJ&hl=en" target="_blank">Google Scholar</a> | 
-    <a href="https://www.researchgate.net/profile/Somsubhra-Chattopadhyay?ev=hdr_xprf" target="_blank">ResearchGate</a> | 
-    <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
-  </p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html"><strong>Chattopadhyay Hydroecology Lab</strong><span>Department of Biology, Texas State University</span></a>
+    <nav aria-label="Main"><ul class="nav"><li><a href="index.html" aria-current="page">Home</a></li><li><a href="research.html">Research</a></li><li><a href="people.html">People</a></li><li><a href="publications.html">Publications</a></li><li class="nav-join"><a href="join.html">Join the lab</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
 
-  <h2>Professional Experience</h2>
-  <ul>
-    <li>Assistant Professor of Fisheries and Water Resources, UW-Stevens Point (2024–present)</li>
-    <li>Postdoctoral Research Associate, Warsaw University of Life Sciences, Poland (2020–2023)</li>
-    <li>Assistant Professor of Civil Engineering, Mahindra Ecole Centrale, India (2018–2019)</li>
-    <li>Postdoctoral Research Associate, ATREE, Bangalore, India (2017–2018)</li>
-  </ul>
+<section class="hero">
+  <div class="wrap">
+    <h1>How rivers flow, dry and recover, and what that means for the life in them.</h1>
+    <p class="lede">We are a hydroecology lab at Texas State University. We combine stream gauges, watershed models, field surveys and environmental DNA to understand how changing flow regimes shape freshwater biodiversity, starting with the rivers of the Texas Hill Country.</p>
+    
+<figure class="hydro" aria-labelledby="hydro-cap">
+<svg viewBox="0 0 1200 230" role="img" aria-label="Illustrative daily streamflow over one year: flood pulses and recessions, a dry period with no flow, then rewetting.">
+  <line class="bed" x1="0" y1="200" x2="1200" y2="200"/>
+  <path class="flow draw" style="--len:1213" d="M0,111 3,112 7,112 10,113 13,113 17,114 20,115 23,115 27,116 30,116 33,117 37,117 40,118 43,119 47,119 50,120 53,120 57,121 60,39 64,42 67,45 70,48 74,52 77,55 80,58 84,61 87,64 90,68 94,71 97,74 100,77 104,80 107,83 110,86 114,89 117,92 120,95 124,98 127,101 130,102 134,103 137,103 140,104 144,104 147,105 150,106 154,106 157,62 160,65 164,68 167,71 170,74 174,77 177,80 181,83 184,87 187,90 191,93 194,96 197,99 201,102 204,102 207,103 211,103 214,104 217,105 221,105 224,106 227,106 231,107 234,20 237,23 241,27 244,30 247,33 251,36 254,40 257,43 261,46 264,49 267,52 271,56 274,59 277,62 281,65 284,68 287,71 291,75 294,78 297,81 301,84 304,87 308,90 311,93 314,96 318,99 321,70 324,73 328,76 331,80 334,83 338,86 341,89 344,92 348,95 351,98 354,101 358,101 361,102 364,103 368,103 371,104 374,104 378,105 381,106 384,106 388,107 391,107 394,108 398,109 401,109 404,110 408,110 411,111 414,112 418,112 421,113 425,113 428,114 431,115 435,115 438,116 441,116 445,117 448,117 451,118 455,119 458,119 461,120 465,120 468,54 471,57 475,60 478,63 481,67 485,70 488,73 491,76 495,79 498,82 501,85 505,88 508,91 511,94 515,97 518,100 521,101 525,102 528,102 531,103 535,103 538,104 542,105 545,105 548,106 552,106 555,107 558,108 562,108 565,109 568,109 572,110 575,111 578,111 582,112 585,112 588,113 592,114 595,114 598,115 602,115 605,116 608,117 612,117 615,118 618,118 622,119 625,119 628,120 632,121 635,121 638,122 642,122 645,123 648,123 652,124 655,125 658,125 662,126 665,126 669,127 672,128 675,129 679,131 682,132 685,134 689,135 692,136 695,138 699,139 702,141 705,142 709,144 712,146 715,147 719,149 722,151 725,152 729,154 732,156 735,158 739,160 742,162 745,164 749,166 752,168 755,170 759,173 762,175 765,178 769,180 772,183 775,186 779,189 782,192 786,195"/>
+  <path class="dry" d="M786,195 789,199 792,200 796,200 799,200 802,200 806,200 809,200 812,200 816,200 819,200 822,200 826,200 829,200 832,200 836,200 839,200 842,200 846,200 849,200 852,200 856,200 859,200 862,200 866,200 869,200 872,200 876,200 879,200 882,200 886,200 889,200 892,200 896,200 899,200 903,200 906,200 909,200 913,200 916,200 919,200 923,200 926,200 929,200 933,200 936,200 939,200 943,200 946,200 949,200 953,200 956,200 959,200 963,200 966,200 969,200 973,200 976,200 979,200 983,200 986,200 989,200 993,200 996,200 999,200"/>
+  <path class="flow draw d3" style="--len:505" d="M999,200 1003,20 1006,24 1009,27 1013,30 1016,34 1019,37 1023,40 1026,43 1030,46 1033,50 1036,53 1040,56 1043,59 1046,62 1050,66 1053,69 1056,72 1060,75 1063,42 1066,45 1070,49 1073,52 1076,55 1080,58 1083,61 1086,65 1090,68 1093,71 1096,74 1100,77 1103,80 1106,83 1110,86 1113,89 1116,92 1120,95 1123,98 1126,101 1130,102 1133,103 1136,65 1140,68 1143,71 1147,74 1150,77 1153,80 1157,83 1160,86 1163,89 1167,92 1170,95 1173,98 1177,101 1180,102 1183,103 1187,103 1190,104 1193,104 1197,105 1200,106"/>
+  <text x="244" y="14">Flood pulse</text>
+  <text class="t-hide" x="470" y="140">Recession</text>
+  <text class="t-dry" x="862" y="222">No flow</text>
+  <text x="1012" y="14">Rewetting</text>
+</svg>
+<figcaption id="hydro-cap" class="hydro-caption">One illustrative year of daily streamflow in an intermittent Hill Country stream.</figcaption>
+</figure>
+  </div>
+</section>
 
-  <h2>Education</h2>
-  <ul>
-    <li>Ph.D., Biosystems and Agricultural Engineering, University of Kentucky, 2017</li>
-    <li>M.S., Civil and Environmental Engineering, NC A&T State University, 2012</li>
-    <li>B.Tech, Agricultural Engineering, North Bengal Agricultural University, 2009</li>
-  </ul>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What we work on</h2>
+      <p>Four connected questions about how water moves through river networks and what it supports.</p>
+    </div>
+    <div class="themes">
+      <article class="theme"><h3>Flow regimes and environmental flows</h3><p>How altered flows affect fish and macroinvertebrates, and how much water rivers need to keep functioning.</p></article>
+      <article class="theme"><h3>Intermittent rivers</h3><p>When and where streams stop flowing, how connectivity breaks apart and rebuilds, and how communities respond.</p></article>
+      <article class="theme"><h3>Environmental DNA and biodiversity</h3><p>eDNA and diatom metabarcoding to track biodiversity across flowing, drying and rewetting reaches.</p></article>
+      <article class="theme"><h3>Watersheds under change</h3><p>SWAT+ modelling and long-term records to assess climate and land-use effects on floods, droughts and low flows.</p></article>
+    </div>
+    <p style="margin-top:36px"><a class="button ghost" href="research.html">Read about our research</a></p>
+  </div>
+</section>
 
-  <h2>Research Interests</h2>
-  <ul>
-    <li>Watershed Hydrology</li>
-    <li>Freshwater Ecology</li>
-    <li>Climate Change Impact Assessment</li>
-    <li>Aquatic Biodiversity</li>
-    <li> Isotope Hydrology</li>
-  </ul>
+<section class="section">
+  <div class="wrap feature">
+    <div>
+      <h2 style="margin-bottom:16px">Lab news</h2>
+      <p class="prose" style="color:var(--muted)">What the lab has been up to lately.</p>
+    </div>
+    <ul class="facts news">
+      <li><b>October 2026</b><span>We are recruiting a funded PhD student to start in Fall 2027. <a href="join.html">See the position.</a></span></li>
+      <li><b>October 2026</b><span>Bassam [Last name] joins the lab as a postdoctoral researcher. Welcome, Bassam!</span></li>
+      <li><b>2026</b><span>The lab begins its first field season in Texas Hill Country rivers.</span></li>
+    </ul>
+  </div>
+</section>
 
-  <h2>Selected Publications</h2>
-  <p>See full <a href="#cv">CV</a> for detailed publication list.</p>
-  <ul>
-    <li>Grygoruk et al. (2025) Journal for Nature Conservation</li>
-    <li>Chattopadhyay et al. (2024) Journal of Hydrology Regional Studies</li>
-    <li>Chattopadhyay et al. (2024) Ecohydrology</li>
-  </ul>
+<section class="join-band">
+  <div class="wrap">
+    <div>
+      <h2>We are recruiting a PhD student for Fall 2027</h2>
+      <p>A funded position in hydrology and ecohydrology: $37,000 per year plus benefits, no tuition, 4.5 years of support. Application review begins December 15, 2026.</p>
+    </div>
+    <div class="actions"><a class="button" href="join.html">See the position</a></div>
+  </div>
+</section>
 
-  <h2 id="cv">Full CV</h2>
-  <p>Download the full <a href="Chattopadhyay Resume April 2025.pdf" target="_blank">CV (PDF)</a>.</p>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><h2>People</h2></div>
+    <div class="mini-people">
+      <a class="mini" href="people.html#som"><img src="img/som.jpg" alt=""><span><strong>Somsubhra Chattopadhyay</strong><span>Principal investigator</span></span></a>
+      <a class="mini" href="people.html#bassam"><span class="placeholder" aria-hidden="true">B</span><span><strong>Bassam [Last name]</strong><span>Postdoctoral researcher</span></span></a>
+    </div>
+  </div>
+</section>
 
-  <h2>Contact</h2>
-  <p>If you’d like to collaborate or learn more about my work, feel free to <a href="mailto:schattop@uwsp.edu">get in touch</a>.</p>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p><strong>Chattopadhyay Hydroecology Lab</strong></p>
+      <p>Department of Biology, Texas State University</p>
+      <p>601 University Drive, San Marcos, TX 78666</p>
+    </div>
+    <div>
+      <p><a href="mailto:schattop@txstate.edu">schattop@txstate.edu</a></p>
+      <p><a href="https://scholar.google.com/citations?user=seiX7_MAAAAJ&amp;hl=en">Google Scholar</a> &nbsp; <a href="https://www.researchgate.net/profile/Somsubhra-Chattopadhyay">ResearchGate</a></p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
