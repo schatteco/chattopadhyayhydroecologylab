@@ -190,3 +190,11 @@ p { margin: 0 0 1em; }
 .directions { list-style: none; padding-left: 0 !important; }
 .directions li { border-left: 3px solid var(--jade); padding: 4px 0 4px 16px; margin-bottom: 14px !important; }
 .directions strong { color: var(--river); }
+
+/* Field photos */
+.photo-band { margin: 56px 0 0; }
+.photo-band img { width: 100%; height: clamp(260px, 42vw, 560px); object-fit: cover; object-position: center 60%; }
+.photo-band figcaption { font-size: .85rem; color: var(--muted); padding-top: 10px; }
+.side-photo { margin: 0; }
+.side-photo img { width: 100%; max-width: 460px; border-radius: 4px; }
+.side-photo figcaption { font-size: .9rem; color: var(--muted); margin-top: 10px; }
