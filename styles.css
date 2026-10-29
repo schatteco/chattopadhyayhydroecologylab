@@ -186,3 +186,7 @@ p { margin: 0 0 1em; }
 
 /* Portrait crops keep faces in frame */
 .person img, .mini img { object-position: center top; }
+
+.directions { list-style: none; padding-left: 0 !important; }
+.directions li { border-left: 3px solid var(--jade); padding: 4px 0 4px 16px; margin-bottom: 14px !important; }
+.directions strong { color: var(--river); }
