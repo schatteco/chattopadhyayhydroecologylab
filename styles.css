@@ -168,3 +168,9 @@ p { margin: 0 0 1em; }
   .hydro .flow, .hydro .dry { stroke-width: 5; }
   .hydro svg { overflow: visible; margin-top: 24px; }
 }
+
+/* Research questions */
+.questions { list-style: none; counter-reset: q; margin: 0; padding: 0; max-width: 72ch; }
+.questions li { counter-increment: q; display: grid; grid-template-columns: 3rem 1fr; gap: 8px; padding: 22px 0; border-top: 1px solid var(--stone); font: 500 1.25rem/1.5 var(--serif); }
+.questions li::before { content: counter(q); font: 600 1.6rem/1.2 var(--serif); color: var(--jade); }
+@media (max-width: 520px) { .questions li { font-size: 1.1rem; grid-template-columns: 2.2rem 1fr; } }
